@@ -17,8 +17,9 @@ Simply select your year of your birth and choose  a date in the future, and the 
 1. You can clone the files to your computer and launch the index.html file in your browser. Thats it.
 
 
+### Try It Out.
 
-
-
+You can try out the app by clicking on the link below.
+ https://piusr.github.io/Future-Age-Calculator.github.io/
 
 
