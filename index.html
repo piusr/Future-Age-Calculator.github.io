@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Future Age Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="page">
+		<div class="pageHeader">
+			<h1>Future Age Calculator</h1>			
+		</div>
+ 
+	<div class="page-form">
+		<label id="year"><h2 class="form-label"> Year of Birth</h2></label>
+		<script type="text/javascript">
+var time = new Date(); //We get an instance of a date
+var year = time.getYear(); //We get only the year 
+if (year < 1900) {
+year = year + 1900;
+}
+var date = year - 101; /*change the '101' to the number of years in the past you want to show */
+var future = year + 100; /*change the '100' to the number of years in the future you want to show */ 
+
+
+
+document.writeln ("<form class=\"year\"><select id=\"yearOfBirth\" class=\"birth-year\"><option value=\"\">Choose Your Year of Birth");
+do {
+date++;
+document.write ("<OPTION value=\"" +date+"\">" +date+ "");
+}
+while (date < future)
+document.write ("</SELECT></FORM>");
+		</script>
+
+
+
+		<label id="year"><h2 class="form-label">Choose a Year in the future</h2></label>
+		<script type="text/javascript">
+			var time = new Date();
+var year = time.getYear();
+if (year < 1980) {
+year = year + 1980;
+}
+var date = year - 100; /*change the '101' to the number of years in the past you want to show */
+var future = year + 50; /*change the '100' to the number of years in the future you want to show */ 
+
+
+
+document.writeln ("<form class=\"year\"><select id=\"future-year\" class=\"birth-year\"><option value=\"\">Choose a Year in the Future");
+do {
+date++;
+document.write ("<OPTION value=\"" +date+"\">" +date+ "");
+}
+while (date < future)
+document.write ("</SELECT></FORM>");
+		</script>
+
+		<button onclick="futureAge();" class="submit-btn">Get Your Future Age</button>
+	</div>
+	<div>
+		<div  class="result">
+			<p id="results"></p>
+		</div>
+		
+	</div>
+
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
