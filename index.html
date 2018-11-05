@@ -37,7 +37,7 @@ document.write ("</SELECT></FORM>");
 
 
 
-		<label id="year"><h2 class="form-label">Choose a Year in the future</h2></label>
+		<label id="year"><h2 class="form-label">Choose a future Year</h2></label>
 		<script type="text/javascript">
 			var time = new Date();
 var year = time.getYear();
@@ -57,8 +57,11 @@ document.write ("<OPTION value=\"" +date+"\">" +date+ "");
 while (date < future)
 document.write ("</SELECT></FORM>");
 		</script>
-
-		<button onclick="futureAge();" class="submit-btn">Get Your Future Age</button>
+           
+           <div class="btn-container"> 
+		
+		<input type="submit" class="submit-btn" name="" value="Get Age" onclick="futureAge();">
+		</div>
 	</div>
 	<div>
 		<div  class="result">
